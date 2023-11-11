@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .answer-button {
+        @apply block px-5 py-2 mx-5 bg-gray-500 rounded-xl border-2 border-gray-500 transition-all cursor-pointer hovcus:bg-transparent hovcus:text-gray-800;
+    }
+
+    .question-set {
+        @apply flex relative flex-row justify-between px-10 py-5 text-lg align-middle border-b-2 border-gray-600;
+    }
+
+    .question-set:last-of-type {
+        @apply border-transparent;
+    }
+
+    .question {
+        @apply text-xl;
+    }
+
+    .answer {
+        @apply flex flex-row text-gray-200;
+    }
+
+    .action-button {
+        @apply px-5 py-2 mx-5 text-2xl text-gray-50 bg-gray-500 rounded-xl border-2 border-gray-500 transition-all cursor-pointer hover:bg-transparent hover:text-gray-800;
+    }
+}

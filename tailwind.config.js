@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
@@ -9,6 +12,10 @@ module.exports = {
       }
     }
   },
-  plugins: [],
+  plugins: [
+    plugin(function({ addVariant }) {
+      addVariant('hovcus', ['&:hover', '&:focus', '&.active'])
+    })
+  ],
 }
 
