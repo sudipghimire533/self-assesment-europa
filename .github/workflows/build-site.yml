@@ -16,6 +16,7 @@ jobs:
       - name: Build tailwindcss
         run: |
           export NODE_PATH=$(npm root -g)
+          npm install -D tailwindcss
           npx tailwindcss -i ./src/input.css -o ./dist/tailwind.css
 
       - name: layout site
