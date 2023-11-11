@@ -15,7 +15,6 @@ jobs:
 
       - name: Build tailwindcss
         run: |
-          export NODE_PATH=$(npm root -g)
           npm install -D tailwindcss
           npx tailwindcss -i ./src/input.css -o ./dist/tailwind.css
 
@@ -31,6 +30,7 @@ jobs:
         run: |
           sudo apt update
           sudo apt install -y minify
+          rm -rf node_modules
           minify --recursive --verbose --output ./ ./ && tree
 
       - name: deploy site
