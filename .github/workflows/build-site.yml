@@ -12,12 +12,10 @@ jobs:
         uses: actions/checkout@v2
         with:
           submodules: "recursive"
-      
-      - name: install tailwindcss
-        run: npm install -D --global tailwindcss
 
       - name: Build tailwindcss
         run: |
+          export NODE_PATH=$(npm root -g)
           npx tailwindcss -i ./src/input.css -o ./dist/tailwind.css
 
       - name: layout site
