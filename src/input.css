@@ -28,6 +28,6 @@
     }
 
     .submit-response a {
-        @apply underline to-blue-500;
+        @apply text-blue-500 underline;
     }
 }
