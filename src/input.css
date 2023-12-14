@@ -3,12 +3,20 @@
 @tailwind utilities;
 
 @layer components {
+    .nav-bar-container {
+        @apply flex justify-center align-middle max-w-[800px] ml-auto mr-auto flex-wrap mt-5;
+    }
+
+    .nav-item {
+        @apply bg-primary text-white px-[20px] py-[5px] m-[2px] text-center grow;
+    }
+
     .answer-button {
-        @apply block px-5 py-2 mx-5 bg-gray-500 rounded-xl border-2 border-gray-500 transition-all cursor-pointer hovcus:bg-transparent hovcus:text-gray-800;
+        @apply block px-5 py-2 mx-5 rounded-xl border-2 transition-all cursor-pointer bg-primary border-primary hovcus:bg-transparent hovcus:text-gray-800 first-letter:capitalize;
     }
 
     .question-set {
-        @apply flex relative flex-row justify-between px-10 py-5 text-lg align-middle border-b-2 border-gray-600;
+        @apply flex relative flex-col justify-between px-10 py-5 text-lg align-middle border-b-2 border-gray-600 lg:flex-row;
     }
 
     .question-set:last-of-type {
@@ -20,11 +28,11 @@
     }
 
     .answer {
-        @apply flex flex-row text-gray-200;
+        @apply flex flex-row ml-auto text-gray-200;
     }
 
     .action-button {
-        @apply px-5 py-2 mx-5 text-2xl text-gray-50 bg-gray-500 rounded-xl border-2 border-gray-500 transition-all cursor-pointer hover:bg-transparent hover:text-gray-800;
+        @apply px-5 py-2 mx-5 text-2xl text-gray-50 rounded-xl border-2 border-gray-500 transition-all cursor-pointer bg-primary hover:bg-transparent hover:text-gray-800;
     }
 
     .submit-response a {
