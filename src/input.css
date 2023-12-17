@@ -4,11 +4,11 @@
 
 @layer components {
     .nav-bar-container {
-        @apply flex justify-center align-middle max-w-[800px] ml-auto mr-auto flex-wrap mt-5;
+        @apply flex justify-center align-middle max-w-[800px] ml-auto mr-auto flex-wrap mt-4;
     }
 
     .nav-item {
-        @apply bg-primary text-white px-[20px] py-[5px] m-[2px] text-center grow;
+        @apply bg-primary text-white px-[15px] py-[3px] m-[2px] text-center grow;
     }
 
     .answer-button {

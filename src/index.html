@@ -11,7 +11,7 @@
 </head>
 
 <body class="p-0 m-0 text-gray-800 bg-white">
-    <nav class="">
+    <nav class="mb-16">
         <div class="flex nav-bar-container">
             <a href="https://www.rewi.europa-uni.de/site-euv/de/studium/studienangebot/jura/index.html"
                 class="nav-item">Studieninteressierte</a>
@@ -19,11 +19,32 @@
             <a href="https://www.rewi.europa-uni.de/de/dekanat/index.html" class="nav-item">Dekanat</a>
             <a href="https://www.rewi.europa-uni.de/de/forschung/index.html" class="nav-item">Forschung</a>
             <a href="https://www.rewi.europa-uni.de/de/lehrstuhl/index.html" class="nav-item">Professuren</a>
-            <a href="https://www.rewi.europa-uni.de/de/polrecht/index.html" class="flex-grow nav-item">Polnisches Recht</a>
+            <a href="https://www.rewi.europa-uni.de/de/polrecht/index.html" class="nav-item">Polnisches
+                Recht</a>
+        </div>
+
+        <div class="flex flex-wrap justify-around content-around mt-10">
+            <a href="https://www.rewi.europa-uni.de/de/ueber-rewi/index.html" class=""><img
+                    alt="University logo"
+                    src="https://www.rewi.europa-uni.de/resources/graphics_2011/site_layout/banner/viadrina-logo.svg"></a>
+            <a href="https://www.rewi.europa-uni.de/de/index.html" class=""><img alt="University logo jura"
+                    src="https://www.rewi.europa-uni.de/resources/graphics_2011/site_layout/site_fak_ze_logos/kachel-jura-190.jpg"></a>
+            <a href="https://www.rewi.europa-uni.de/de/index.html" class=""><img alt="University logo"
+                    src="https://www.rewi.europa-uni.de/resources/graphics_2011/site_layout/banner/doppelbilder/21.jpg"></a>
+        </div>
+
+        <div class="flex flex-wrap justify-start mt-10 ml-10 align-middle">
+            <a class="mx-5 my-2" href="https://www.rewi.europa-uni.de/site-euv/de/studium/informieren-orientieren/index.html">
+                <img src="https://www.rewi.europa-uni.de/resources/graphics_2011/site_layout/projekt-stg-institut-logo/button_du-deine-uni-de_hg-gelb.jpg" alt="du deine uni fur Studieninteressierte">
+            </a>
+            <a class="mx-5 my-2" href="https://www.rewi.europa-uni.de/site-euv/de/studium/informieren-orientieren/index.html">
+                <img src="https://www.rewi.europa-uni.de/resources/graphics_2011/site_layout/projekt-stg-institut-logo/bachelorstg.jpg" alt="Viadrana bachelor">
+            </a>
+            <span class="mx-5 my-2 text-3xl">Racht und Politik und Recht</span>
         </div>
     </nav>
 
-    <p class="my-10 ml-10 text-xl">Bist Du daran interessiert,</p>
+    <p class="py-10 ml-10 text-xl border-t-2 border-solid border-primary">Bist Du daran interessiert,</p>
 
     <section class="flex flex-col mx-5 my-10 bg-gray-300 rounded-xl" id="question-set-container">
         <template class="hidden question-set-template">
@@ -45,7 +66,8 @@
     <section class="">
         <div class="fixed hidden top-0 left-0 flex-col justify-center w-screen h-full align-middle bg-[#00000044]"
             id="result-response-container">
-            <div class="flex flex-col justify-center px-10 py-10 text-center align-middle bg-gray-400 max-w-[900px] rounded-xl ml-auto mr-auto">
+            <div
+                class="flex flex-col justify-center px-10 py-10 text-center align-middle bg-gray-400 max-w-[900px] rounded-xl ml-auto mr-auto">
                 <p class="text-2xl submit-response"></p>
                 <div class="mt-10 mr-auto ml-auto w-min action-button" onclick="close_result()">close</div>
             </div>
