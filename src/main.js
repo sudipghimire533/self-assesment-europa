@@ -1,90 +1,90 @@
 const Questions = [
     {
-        question: "wie rechtliche und politische Probleme in Deutschland zusammenhängen?",
+        question: "1: ...wie rechtliche und politische Probleme in Deutschland zusammenhängen?",
         answers: [
             {label: "ja", point: "1"},
             {label: "nein", point: "0"}
         ]
     },
     {
-        question: "inwiefern Verfassungs- und Europarecht vor Diskriminierungen schützen?",
+        question: "2: ...inwiefern Verfassungs- und Europarecht vor Diskriminierungen schützen?",
         answers: [
             {label: "ja", point: "1"},
             {label: "nein", point: "0"}
         ]
     },
     {
-        question: "an einer internationalen Universität direkt an der deutsch-polnischen Grenze zu studieren?",
+        question: "3: ...an einer internationalen Universität direkt an der deutsch-polnischen Grenze zu studieren?",
         answers: [
             {label: "ja", point: "1"},
             {label: "nein", point: "0"}
         ]
     },
     {
-        question: "welchen Grenzen das freie Recht auf Meinungsäußerung unterliegt?",
+        question: "4: ...welchen Grenzen das freie Recht auf Meinungsäußerung unterliegt?",
         answers: [
             {label: "ja", point: "1"},
             {label: "nein", point: "0"}
         ]
     },
     {
-        question: "wie sich die Politik in Deutschland seit der Wiedervereinigung entwickelt hat?",
+        question: "5: ...wie sich die Politik in Deutschland seit der Wiedervereinigung entwickelt hat?",
         answers: [
             {label: "ja", point: "1"},
             {label: "nein", point: "0"}
         ]
     },
     {
-        question: "nach dem Studium als Rechtsanwalt oder Richter zu arbeiten?",
+        question: "6: ...nach dem Studium als Rechtsanwalt oder Richter zu arbeiten?",
         answers: [
             {label: "ja", point: "0"},
             {label: "nein", point: "1"}
         ]
     },
     {
-        question: "nach dem Studium als Diplomat zu arbeiten?",
+        question: "7: ...nach dem Studium als Diplomat zu arbeiten?",
         answers: [
             {label: "ja", point: "0"},
             {label: "nein", point: "1"}
         ]
     },
     {
-        question: "nach dem Studium in Medien, Verbänden oder politischen Institutionen zu arbeiten?",
+        question: "8: ...nach dem Studium in Medien, Verbänden oder politischen Institutionen zu arbeiten?",
         answers: [
             {label: "ja", point: "1"},
             {label: "nein", point: "0"}
         ]
     },
     {
-        question: "wie Krieg und Frieden entstehen?",
+        question: "9: ...wie Krieg und Frieden entstehen?",
         answers: [
             {label: "ja", point: "1"},
             {label: "nein", point: "0"}
         ]
     },
     {
-        question: "was die EU für die Bürger der Mitgliedstaaten bedeutet?",
+        question: "10: ...was die EU für die Bürger der Mitgliedstaaten bedeutet?",
         answers: [
             {label: "ja", point: "1"},
             {label: "nein", point: "0"}
         ]
     },
     {
-        question: "nach dem BA-Studium ein MA-Studium der Politikwissenschaft weiterzuführen?",
+        question: "11: ...nach dem BA-Studium ein MA-Studium der Politikwissenschaft weiterzuführen?",
         answers: [
             {label: "ja", point: "1"},
             {label: "nein", point: "0"}
         ]
     },
     {
-        question: "wie sich kulturelle Unterschiede auf das Zusammenleben in Deutschland und Europa auswirken?",
+        question: "12: ...wie sich kulturelle Unterschiede auf das Zusammenleben in Deutschland und Europa auswirken?",
         answers: [
             {label: "ja", point: "0"},
             {label: "nein", point: "1"}
         ]
     },
     {
-        question: "die Möglichkeit zu haben, ein Auslandssemester während des Studiums an einer unserer rund 250 Partneruniversitäten zu absolvieren?",
+        question: "13: ...die Möglichkeit zu haben, ein Auslandssemester während des Studiums an einer unserer rund 250 Partneruniversitäten zu absolvieren?",
         answers: [
             {label: "ja", point: "1"},
             {label: "nein", point: "0"}
@@ -145,7 +145,7 @@ function response_text() {
     let question_count = Questions.length;
     let percentage = total_points * 100 / question_count;
 
-    let inner_html = "Error! please report this to site admin";
+    let inner_html = "Fehler! Bitte melden Sie dies dem Site-Administrator";
 
     if ( percentage > 81 ) {
         inner_html = `${total_points}/${question_count}. Perfekt, der Studiengang ist genau das Richtige für Dich! Komm an die Viadrina und Du findest ein <a target="_blank" class="clickable-link" href="${redirect_ja}">Studienangebot</a>, das Dich begeistern wird.`
@@ -177,7 +177,7 @@ function submit_response(){
 
     // make sure all answers have been answered
     if (given_answers < Questions.length ) {
-        text_continer.innerHTML = "Please answer all question";
+        text_continer.innerHTML = "Bitte beantworten Sie alle Fragen";
     } else {
         text_continer.innerHTML = response_text();
     }
