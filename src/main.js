@@ -185,6 +185,8 @@ function submit_response(){
     let container = document.querySelector('#result-response-container');
     container.classList.add('flex');
     container.classList.remove('hidden');
+
+    reset_response()
 }
 
 function select_answer(answer) {

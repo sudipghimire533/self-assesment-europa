@@ -48,14 +48,14 @@
     </nav>
 
     <span class="block px-10 py-5 mb-5 ml-10 w-max text-3xl bg-yellow-200 rounded">Self Assesment</span>
-    <p class="overflow-auto py-10 ml-10 text-xl border-t-2 border-solid border-primary"><span>Liebe/r
+    <p class="block overflow-auto py-10 ml-10 text-xl border-t-2 border-solid border-primary"><span>Liebe/r
             Studieninteressent/in,
             dieses kurze Self-Assessment dauert nicht länger als ein paar Minuten und gibt Dir einen guten Eindruck,
-            ob der Studiengang fuer Dich das Richtige ist. Probier es einfach mal aus!</span><br />
-        <span class="py-5">Bist Du daran interessiert,</span>
+            ob der Studiengang fuer Dich das Richtige ist. Probier es einfach mal aus!</span><br>
+        <span class="block pt-10">Bist Du daran interessiert,</span>
     </p>
 
-    <section class="flex flex-col mx-5 my-10 bg-gray-300 rounded-xl" id="question-set-container">
+    <section class="flex flex-col mx-5 mb-10 bg-gray-300 rounded-xl" id="question-set-container">
         <template class="hidden question-set-template">
             <div class="question-set">
                 <div class="question">A sample question?</div>
@@ -67,7 +67,7 @@
         </template>
     </section>
 
-    <section class="flex flex-row justify-end mb-16">
+    <section class="flex flex-row justify-between mb-16">
         <div class="action-button" tabindex="0" onclick="reset_response()">Zurück</div>
         <div class="action-button" tabindex="0" onclick="submit_response()">Weiter</div>
     </section>
